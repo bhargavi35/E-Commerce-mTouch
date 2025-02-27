@@ -1,24 +1,70 @@
-# Next.js E-Commerce Project
+Here's a well-structured **README.md** for your project:  
 
-This project is a small e-commerce application built using Next.js. It features a product catalog with pagination and sorting, as well as a product details page using server-side rendering.
+---
 
-## Features
+# **🛍️ Product Listing App**  
 
-- **Product Catalog**: Display a list of products with pagination and sorting functionality.
-- **Product Details Page**: Dynamically rendered product details using server-side rendering.
-- **API Integration**: Fetches product data from the Fake Store API.
+A Next.js-based **Product Listing App** with features like **search, sorting, pagination, error handling, and a responsive UI**. 🚀  
 
-## Setup
+---
 
-1. Clone the repository: `git clone https://github.com/bhargavi35/E-Commerce-mTouch.git`
-2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
+## **🔹 Features**  
 
-## Deployment
+✅ **Dynamic Search** – Filter products by name in real-time.  
+✅ **Sorting** – Sort products by **name (A-Z, Z-A)** and **price (low-high, high-low)**.  
+✅ **Pagination** – Displays products with easy navigation.  
+✅ **Error Handling** – Shows a message if the API request fails.  
+✅ **Consistent UI** – Fixed-size product cards with hover effects.  
+✅ **Mobile Responsive** – Works across all devices.  
 
-This application can be deployed to Vercel or Netlify for hosting.
+---
 
-### **📌 Contributors**
+## **📌 Installation & Setup**  
+
+### **1️⃣ Clone the Repository**  
+```sh
+git clone https://github.com/bhargavi35/E-Commerce-mTouch.git
+cd product-listing-app
+```
+
+### **2️⃣ Install Dependencies**  
+```sh
+npm install
+```
+
+### **3️⃣ Run the Development Server**  
+```sh
+npm run dev
+```
+Now, open **http://localhost:3000** in your browser. 🎉  
+
+## **📌 API Endpoint**  
+
+This app fetches data from **Fake Store API**:  
+🔗 `https://fakestoreapi.com/products`  
+
+---
+
+## **📌 Technologies Used**  
+
+- **Next.js** – Server-side rendering for fast loading  
+- **React.js** – Component-based UI  
+- **Tailwind CSS** – Modern styling framework  
+- **Axios** – API fetching  
+- **React Hooks** – `useState`, `useEffect`  
+- **Fake Store API** – Sample product data  
+
+---
+
+## **📌 Future Improvements**  
+
+🔹 Add a **"Add to Cart"** functionality  
+🔹 Implement **Category Filters**  
+🔹 Improve **Product Detail Page**  
+
+---
+
+Let me know if you need **modifications or extra sections!** 🚀### **📌 Contributors**
 
 👨‍💻 **Bhargavi Chella** – _Full Stack Developer_  
 📩 Email: chellabhargavi2002@gmail.com  
