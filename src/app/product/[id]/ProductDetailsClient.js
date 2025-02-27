@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FadeLoader } from "react-spinners";
-import Truncate from "react-truncate";
+import TextTruncate from "react-text-truncate";
 
 export default function ProductDetailsClient({ product: initialProduct }) {
     const [product, setProduct] = useState(initialProduct);
@@ -56,11 +56,17 @@ export default function ProductDetailsClient({ product: initialProduct }) {
                     </div>
 
                     <div className="w-full md:w-1/2 p-4">
-                        <p className="text-gray-700 text-sm leading-6">
-                            <Truncate lines={!showMore ? 3 : 0} ellipsis={<span>... </span>}>
-                                {product.description}
-                            </Truncate>
-                        </p>
+                        {!showMore ? (
+                            <TextTruncate
+                                line={3}
+                                element="p"
+                                truncateText="..."
+                                text={product.description}
+                                className="text-black text-base leading-6"
+                            />
+                        ) : (
+                            <p className="text-black text-base leading-6">{product.description}</p>
+                        )}
 
                         <button
                             className="text-blue-500 text-sm mt-2 focus:outline-none"
