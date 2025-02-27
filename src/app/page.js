@@ -9,7 +9,7 @@ import { FadeLoader } from 'react-spinners';
 
 export default function Home() {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [sortCriteria, setSortCriteria] = useState({ field: 'name', order: 'asc' });
 
@@ -25,12 +25,14 @@ export default function Home() {
       });
   }, []);
 
-  // Sorting function 
+  // Sorting function
   const sortedProducts = [...products].sort((a, b) => {
-    if (sortCriteria.field === 'name') {
-      return sortCriteria.order === 'asc' ? a.title.localeCompare(b.title) : b.title.localeCompare(a.title);
-    } else if (sortCriteria.field === 'price') {
-      return sortCriteria.order === 'asc' ? a.price - b.price : b.price - a.price;
+    if (sortCriteria.field === "name") {
+      return sortCriteria.order === "asc"
+        ? a.title.localeCompare(b.title)
+        : b.title.localeCompare(a.title);
+    } else if (sortCriteria.field === "price") {
+      return sortCriteria.order === "asc" ? a.price - b.price : b.price - a.price;
     }
     return 0;
   });
