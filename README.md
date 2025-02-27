@@ -18,6 +18,10 @@ This project is a small e-commerce application built using Next.js. It features 
 
 This application can be deployed to Vercel or Netlify for hosting.
 
-## Contributing
+### **📌 Contributors**
 
-Contributions are welcome! Please submit a pull request with your changes.
+👨‍💻 **Bhargavi Chella** – _Full Stack Developer_  
+📩 Email: chellabhargavi2002@gmail.com  
+📌 LinkedIn: [https://www.linkedin.com/in/bhargavichella/] 
+📌 Portfolio: [https://bhargavi35-portfolio.vercel.app/]
+
